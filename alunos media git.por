@@ -1,6 +1,6 @@
 programa
 {	inclua biblioteca Matematica	
-	//variáveis	
+	
 	const inteiro tam = 5
 	cadeia aluno[tam]
 	cadeia nome 
@@ -10,11 +10,9 @@ programa
 	real maior , soma=0.0
 	real menor 
 	inteiro cont=0 ,  i
-	/*equação pra arredondar os numeros
-	 * arredonda=matematica.arredondar(numero,2)
-	 */
+	
 	funcao inicio()
-	{	//entrada de dados 
+	{	
 		para (i=0; i<tam; i++)
 		{ cont=0
 		escreva ("Digite o nome do aluno: ")
@@ -27,14 +25,14 @@ programa
 		cont++
 		escreva("\nDigite a ", cont+1 , "º nota do aluno: ")
 		leia(n3)	
-		//calculos de media
+		
 		media = n1 + n2 + n3
 		divisao = media / 3 
 		notaM[i] = divisao 
 		escreva("\n")
 			
 		}
-			// loop de repetição para aprovação ou reprovação
+			
 		para (i=0; i<tam; i++)
 		{
 			arre= Matematica.arredondar(notaM[i], 2)
@@ -53,7 +51,7 @@ programa
 			}
 			cont++
 		}
-			//loop de maior e menor media
+			
 			maior = notaM[0]
 			menor = notaM[0]
 		para(i = 0 ; i < tam ; i++)
@@ -81,14 +79,3 @@ programa
 			escreva("\n")	
 	}
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 77; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {aluno, 5, 8, 5}-{notaM, 7, 6, 5};
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
